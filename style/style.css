@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+}
+
+.wrapper {
+    z-index: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper::before {
+    position: absolute;
+    content: "";
+    background-image: url(../img/Vector_L.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    width: 570px;
+    height: 440px;
+    animation: vector-l 1s;
+}
+
+.wrapper::after {
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url(../img/Vector_R.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 370px;
+    animation: vector-r 1s;
+}
+
+@keyframes vector-l {
+    from {
+        top: -1000px;
+        left: -1000px;
+    }
+
+    to {
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes vector-r {
+    from {
+        top: -1000px;
+        right: -1000px;
+    }
+
+    to {
+        top: 0;
+        right: 0;
+    }
+}
+
+.header {
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 93px;
+
+}
+
+.logo {
+    width: 190px;
+    height: 60px;
+    display: block;
+}
+
+.main {
+    margin: 0 auto;
+    margin-bottom: 76px;
+}
+
+.container {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-grow: 1;
+}
+
+.text-info {
+    width: 838px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+
+.text-info_title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 72px;
+    margin-bottom: 8px;
+    color: #162C4E;
+    opacity: 0.39;
+}
+
+.text-info_subtitle {
+    width: 423px;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer {
+    
+    width: 588px;
+    margin: 0 auto;
+    margin-bottom: 72px;
+    font-weight: 600;
+    font-size: 72px;
+    display: flex;
+    justify-content: space-around;
+    animation: time 5s;
+}
+@keyframes time {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity:1;
+    }
+}
+.wrapper_cell {
+    text-align: center;
+}
+
+.number {
+    color: #162C4E;
+}
+
+.vector {
+    width: 135px;
+    height: 54px;
+    background: url(../img/Vector.png) no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.vector-text {
+    color: #fff;
+    font-size: 16px;
+}
+
+.socials {
+    width: 338px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.socials_subtitle {
+    margin-bottom: 12px;
+}
+
+.socials_btn {
+    display: flex;
+    align-items: center;
+    width: 240px;
+    height: 60px;
+    margin: 0 auto;
+    background: #1D4169;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 18px;
+    justify-content: space-around;
+}
+.socials_btn:hover{
+    background: #03356f;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 192px;
+    background: #162C4E;
+    text-align: center;
+    animation: foo 1s;
+
+}
+
+@keyframes foo {
+    from {
+        bottom: -1000px;
+    }
+
+    to {
+        bottom: 0px;
+    }
+}
+
+.form {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin-top: 60px;
+}
+
+.i_email {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    width: 440px;
+    background: #FFFFFF;
+    color: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.4);
+    border-radius: 40px;
+    padding: 15px;
+    outline: none;
+}
+
+.btn_submit {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 9;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: #DF2224;
+    width: 43px;
+    height: 43px;
+    border-radius: 50px;
+}
+.btn_submit:hover{
+    background: #981517;
+}
+.btn_submit:active{
+    background: #771011;
+}
+.material-symbols-outlined-forward {
+    font-family: 'Material Icons';
+    color: #fff;
+    font-size: 20px;
+}
+
+.noneWrapper{
+  position: absolute;
+  top:-3000px;
+  animation: wrapp 2s;
+}
+
+@keyframes wrapp {
+    from {
+        top:0;
+        width: 100%;
+    }
+    
+    to {
+        width: 100%;
+        top:-3000px;
+    }
+}

@@ -1,0 +1,45 @@
+.events{
+    position: fixed;
+    top:0;
+    width: 100%;
+    animation: even 2s;
+}
+
+@keyframes even {
+    from {
+        top:2000px;
+    }
+    
+
+    to {
+        top:0;
+    }
+}
+
+.event_title{
+    margin-top: 110px;
+    margin-bottom: 40px;
+}
+
+.event_content{
+    width: 300px;
+    margin: 0 auto;
+    border: solid 1px #162C4E;
+    text-align: center;
+    border-radius: 3px;
+
+}
+
+.btn_event{
+    cursor: pointer;
+    width: 180px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.material-symbols-outlined-down {
+    font-family: 'Material Icons';
+    color: #fff;
+    font-size: 20px;
+}

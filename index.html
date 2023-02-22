@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/media.css">
+        <link rel="stylesheet" href="style/popup.css">
+        <link rel="stylesheet" href="style/events.css">
+        <title>Back Counter</title>
+    </head>
+    <body>
+        <div class="wrapper">
+
+            <header class="header">
+                <a href="/"><img class="logo" src="img/Group.png" alt="logo"></a>
+            </header>
+
+            <main class="main">
+                <div class="container">
+                    <div class="text-info">
+                        <h1 class="text-info_title">Under Construction</h1>
+                        <p class="text-info_subtitle">We're making lots of
+                            improvements
+                            and will be back soon</p>
+                    </div>
+
+
+                    <div class="timer">
+                        <div class="wrapper_cell">
+                            <span class="number" id="days"></span>
+                            <div class="vector">
+                                <span id="name_days" class="vector-text"></span>
+                            </div>
+                        </div>
+
+                        <span class="number">:</span>
+
+                        <div class="wrapper_cell">
+                            <span class="number" id="hours"></span>
+                            <div class="vector">
+                                <span id="name_hours" class="vector-text"></span>
+                            </div>
+                        </div>
+
+                        <span class="number">:</span>
+
+                        <div class="wrapper_cell">
+                            <span class="number" id="minutes"></span>
+                            <div class="vector">
+                                <span id="name_minutes" class="vector-text"></span>
+                            </div>
+                        </div>
+
+                        <span class="number">:</span>
+
+                        <div class="wrapper_cell">
+                            <span class="number" id="seconds"></span>
+                            <div class="vector">
+                                <span id="name_seconds" class="vector-text"></span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="socials">
+                        <p class="socials_subtitle">Check our event page when
+                            you
+                            wait:</p>
+                        <a class="socials_btn"
+                            href="https://github.com/Rusel28"
+                            target="_blank">Go to the event<span
+                                class="material-symbols-outlined-forward">
+                                arrow_forward
+                            </span></a>
+                    </div>
+                </div>
+
+
+
+
+            </main>
+
+            <footer class="footer">
+
+                <div class="wrapper_form">
+                    <form class="form" name="form" id="js_form" action=""
+                        method="post">
+                        <input class="i_email" type="email" name="email"
+                            placeholder="Enter you Email and get notified"
+                            id="i_email">
+                        <button class="btn_submit" name="btn_submit"
+                            type="submit"><span
+                                class="material-symbols-outlined-forward">
+                                arrow_forward
+                            </span></button>
+                    </form>
+                </div>
+                <div class="btn_event" onclick=addEvents()>
+                    <span>Other Events</span>
+                    <span class="material-symbols-outlined-down">
+                        arrow_downward
+                    </span>
+                </div>
+                </footer>
+            </div>
+
+            <!----events---->
+            <main class="events none">
+                <div class="event_title">
+                    <h1 class="text-info_title">All events</h1>
+                </div>
+                <div class="event_content">
+                    <span class="text-info_title">excuse me</span>
+                </div>
+            </main>
+            <!-- popup -->
+            <div class="wrapper-popup none">
+                <div class="popup">
+                    <span class="material-symbols-outlined-close"
+                        onclick=closePupup()>
+                        close
+                    </span>
+                    <h3 class="popup_title"></h3>
+                    <p class="popup_text"></p>
+                    <button class="popup_btn" onclick=closePupup()>Close</button>
+                </div>
+            </div>
+
+
+            <script src="./js/timer.js"></script>
+            <script src="./js/form.js"></script>
+            <script src="./js/media.js"></script>
+            <script src="./js/event.js"></script>
+        </body>
+    </html>
